@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="./stylesheet/navbar.css">
+    <title>Bapparaj sk</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-left">
+            <li><a href=""><i class="fa-solid fa-code"></i></a> </li>
+            <li><a href="" class="name-my">Bapparaj</a> </li>
+        </ul>
+
+        <ul class="nav-right">
+            <li><a href="" class="hover active">Home</a></li>
+            <li><a href="" class="hover">Applications</a></li>
+            <li><a href="./about.html" class="hover">About Me</a> </li>
+            <li><a href="" class="hover">Contact Us</a> </li>
+        </ul>
+        <i class="fa-solid fa-bars-staggered toolbar" id="toggle"></i>
+<!--        <i class="fa-solid fa-xmark"></i>-->
+    </nav>
+
+    <main id="mainbar">
+        <div class="video">
+            <video id="videobcg" src="video/video.mp4" autoplay loop muted></video>
+        </div>
+
+        <div class="timeBar">
+            <div class="timeBar-progress" id="progress">
+                <p class="time">
+                    <span id="hours">00</span> :
+                    <span id="minutes">00</span>
+                </p>
+                <p class="date">
+                    <span id="day"></span>,
+                    <span id="currdate"></span>
+                <span id="month"></span>
+            </p>
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="details-head">
+                    <h2>My self</h2>
+            </div>
+            <div class="details-body">
+                <p>Hello there! I'm Bapparaj SK,</p>
+                <div><p><span class="auto-play"></span></p></div>
+            </div>
+            <div class="linkButton">
+                <button type="button"><a href="">TAKE A LOOK AT MY WORK</a></button>
+                <button type="button"><a href="./about.html">more About me</a></button>
+            </div>
+        </div>
+    </main>
+
+
+<!--    Script tag-->
+    <script src="./js/index.js"></script>
+    <script src="./js/temp.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var type = new Typed(".auto-play", {
+            strings: ["A dedicated Full Stack Web Developer.", " Data Structures and Algorithms problem-solving."],
+            typeSpeed: 50,
+            backSpeed: 40,
+            loop: true,
+        });
+    </script>
+</body>
+</html>

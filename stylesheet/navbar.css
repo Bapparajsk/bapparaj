@@ -1,0 +1,102 @@
+li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.hover {
+    transition: all 0.1s linear;
+}
+
+.hover:hover {
+    color: #38bee6;
+}
+
+.active {
+    color: aqua;
+}
+
+/*navbar*/
+.navbar {
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    justify-content: space-between;
+    background-color: #13005A;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+}
+.nav-left li {
+    padding: 0 1rem;
+    font-family: "Borel", cursive;
+}
+
+.nav-right {
+    height: 100%;
+    padding: 0 5rem;
+}
+.nav-right li {
+    padding: 2rem 1rem;
+}
+
+.toolbar {
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    html, body {
+        font-size: 55%;
+    }
+    .nav-right {
+        position: absolute;
+        flex-direction: column;
+        top: 12rem;
+        left: -100%;
+        transition: 0.4s;
+    }
+    .nav-right li {
+        padding: 1rem 0;
+    }
+    .left {
+        left: 1rem;
+    }
+    .toolbar {
+        display: inline;
+        font-size: 2rem;
+        color: white;
+        margin-right: 1.5rem;
+    }
+}
+@media screen and (max-width: 430px) {
+    html, body {
+        font-size: 48%;
+    }
+    .name-my {
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+    .details {
+        left: 7rem;
+    }
+}

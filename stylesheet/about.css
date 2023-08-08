@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Lugrasimo&family=Open+Sans:wght@500&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+}
+
+#main {
+  position: absolute;
+  overflow: hidden;
+  top: 5.5rem;
+}
+
+.page1 {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 6rem;
+  position: relative;
+  z-index: -10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.container {
+  width: 100rem;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.container .page1-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .page1-left .left-bar {
+  width: 100rem;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+}
+.container .page1-left .left-bar p {
+  font-size: 1.8rem;
+}
+.container .page1-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .page1-right img {
+  width: 30rem;
+  height: 30rem;
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.5));
+}
+
+.page2 {
+  width: 100vw;
+  height: 100vh;
+}
+.page2 .hading {
+  width: 58rem;
+  height: 15rem;
+  position: relative;
+  top: 25rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  padding: 0 2rem;
+}
+.page2 .hading p {
+  color: #000;
+  font-weight: 600;
+}
+.page2 .hading h1 {
+  color: #d5d4d4;
+}
+
+.page3 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page3 .footer {
+  position: absolute;
+  right: 5rem;
+  bottom: 6rem;
+}
+
+.container3 {
+  width: 100rem;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.container3 div {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftbar img {
+  width: 35rem;
+  height: 35rem;
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.5));
+}
+
+.rightbar {
+  width: 100rem;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+}
+.rightbar p {
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 760px) {
+  html, body {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 430px) {
+  html, body {
+    font-size: 48%;
+  }
+  .container {
+    height: 70rem;
+    position: absolute;
+    top: 10rem;
+    flex-direction: column;
+  }
+  .container .page1-left .left-bar p {
+    font-size: 2rem;
+  }
+  .hading {
+    width: 100%;
+    height: 20rem !important;
+    padding: 0 5rem;
+  }
+  .container3 {
+    flex-direction: column;
+    height: 80rem;
+  }
+  .nav-right a {
+    color: black;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

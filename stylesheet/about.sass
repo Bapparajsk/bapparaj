@@ -1,0 +1,135 @@
+@import "link"
+@import "media"
+@import "function"
+
+*
+  padding: 0
+  margin: 0
+
+html,body
+  height: 100%
+  width: 100%
+  font-size: 62.5%
+
+#main
+  position: absolute
+  overflow: hidden
+  top: 5.5rem
+
+
+//------------------------------------------------------page 1----------------------------------------------------------
+.page1
+  height: 100vh
+  width: 100vw
+  margin-top: 6rem
+  position: relative
+  z-index: -10
+  @include flex
+  justify-content: space-evenly
+
+
+.container
+  width: 100rem
+  height: 50rem
+  @include flex
+  justify-content: space-between
+
+  .page1-left
+    width: 50%
+    height: 100%
+    @include flex
+
+    .left-bar
+      width: 100rem
+      height: 60%
+      @include flex
+      font-family: 'Ubuntu', sans-serif
+
+      p
+        font-size: 1.8rem
+
+
+  .page1-right
+    width: 50%
+    height: 100%
+    @include flex
+    img
+      width: 30rem
+      height: 30rem
+      //z-index: 2
+      filter: drop-shadow(0 .5rem 1rem rgba(0,0,0,0.5))
+
+//------------------------------------------------------page 2----------------------------------------------------------
+
+
+.page2
+  width: 100vw
+  height: 100vh
+
+
+  .hading
+    width: 58rem
+    height: 15rem
+    position: relative
+    top: 25rem
+    left: 0
+    @include flex
+    align-items: start
+    flex-direction: column
+    font-family: 'Poppins', sans-serif
+    padding: 0 2rem
+    p
+      color: #000
+      font-weight: 600
+    h1
+      color: #d5d4d4
+
+//------------------------------------------------------page 3----------------------------------------------------------
+
+
+.page3
+  height: 100vh
+  width: 100vw
+  @include flex
+
+
+  .footer
+    position: absolute
+    right: 5rem
+    bottom: 6rem
+
+
+.container3
+  width: 100rem
+  height: 50rem
+  @include flex
+  justify-content: space-between
+
+
+  div
+    height: 100%
+    width: 45%
+    @include flex
+
+
+.leftbar img
+  width: 35rem
+  height: 35rem
+  filter: drop-shadow(0 .5rem 1rem rgba(0,0,0,0.5))
+
+
+.rightbar
+  width: 100rem
+  height: 60%
+  @include flex
+  font-family: 'Ubuntu', sans-serif
+  p
+    font-size: 1.8rem
+
+
+@media screen and (max-width: 760px)
+  @include about760
+
+
+@media screen and (max-width: 430px)
+  @include about430

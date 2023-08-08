@@ -1,0 +1,143 @@
+@import "link"
+@import "media"
+@import "function"
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+
+
+html, body
+  height: 100%
+  width: 100%
+  font-size: 62.5%
+  overflow: hidden
+
+
+/*main*/
+
+.mainbar
+  width: 100vh
+  height: 100vh
+
+
+.video
+  height: 100vh
+  width: 100%
+
+
+#videobcg
+  position: absolute
+  top: 0
+  left: 0
+  width: 100% !important
+  height: 100% !important
+  z-index: -1000
+  object-fit: cover
+
+
+// set Time Table
+
+.timeBar
+  position: absolute
+  width: 20rem
+  height: 20rem
+  top: 6.5rem
+  right: 1rem
+  backdrop-filter: blur(5px)
+  @include flex
+
+
+.timeBar-progress
+  position: relative
+  width: 18rem
+  height: 18rem
+  background: conic-gradient(#fff 3deg, transparent 0deg)
+  border-radius: 50%
+  @include flex
+  flex-direction: column
+
+
+.timeBar-progress::before
+  content: ""
+  position: absolute
+  width: 17rem
+  height: 17rem
+  border-radius: 50%
+  background-color: #242121
+  box-shadow: 0 0 .5px .5px black
+  @include flex
+
+.time ,.date
+  @include td
+
+.time
+  font-size: 2rem
+  font-weight: 700
+
+
+/*Deletes Bar*/
+.details
+  position: absolute
+  width: 40rem
+  height: 20rem
+  bottom: 5rem
+  left: 10rem
+  color: white
+  @include flex
+  flex-direction: column
+  justify-content: space-between
+  backdrop-filter: blur(5px)
+
+
+.details-head
+  width: 100%
+  height: 30%
+  @include flex
+
+
+.details-head h2
+  font-size: 2.5rem
+  font-weight: 600
+  font-family: 'Lugrasimo', cursive
+
+
+.details-body
+  width: 100%
+  height: 50%
+  padding: 0 .5rem
+  @include flex
+  flex-direction: column
+  font-family: 'Rubik', sans-serif
+
+
+.auto-play
+  font-size: 1.6rem
+
+
+.linkButton
+  width: 100%
+  height: 20%
+  @include flex
+  justify-content: space-evenly
+
+  button
+    padding: 0.25rem 0.75rem
+    border: 1px solid white
+    border-radius: 5px
+    background: none
+    box-shadow: 0 3px 0 rgb(209,209,209)
+
+  button:active
+    box-shadow: 0 1px 0 rgb(209,209,209)
+    transform: translateY(2px)
+
+
+//media
+@media screen and (max-width: 760px)
+  @include index760
+
+@media screen and (max-width: 430px)
+  @include index430

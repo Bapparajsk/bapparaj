@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./stylesheet/navbar.css">
+    <link rel="stylesheet" href="stylesheet/about.css">
+    <title>About Me</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-left">
+            <li><a href="index.html"><i class="fa-solid fa-code"></i></a> </li>
+            <li><a href="index.html" class="name-my">Bapparaj</a> </li>
+        </ul>
+
+        <ul class="nav-right">
+            <li><a href="index.html" class="hover">Home</a></li>
+            <li><a href="" class="hover">Applications</a></li>
+            <li><a href="" class="hover active">About Me</a> </li>
+            <li><a href="" class="hover">Contact Us</a> </li>
+        </ul>
+        <i class="fa-solid fa-bars-staggered toolbar" id="toggle"></i>
+        <!--        <i class="fa-solid fa-xmark"></i>-->
+    </nav>
+
+    <div id="main">
+<!--        page 1-->
+        <div data-scroll data-scroll-speed="-5" class="page1">
+            <div class="container">
+                <div class="page1-left">
+                    <div class="left-bar" data-aos="fade-right">
+                        <p>
+                            With 2 years of professional experience under my belt, I have had the privilege of contributing to various Full Stack Web Development projects. Working with a range of technologies, including HTML, CSS, JavaScript, Node.js, React, and databases MongoDB, SQL, I have delivered efficient and user-friendly web applications. Simultaneously, my fascination with Data Structures and Algorithms has enabled me to write optimized and robust code.
+                        </p>
+                    </div>
+                </div>
+                <div class="page1-right" data-aos="fade-left">
+                    <img src="img/about.png" alt="jpg">
+                </div>
+            </div>
+        </div>
+<!--        page 2-->
+        <div class="page2">
+            <div class="hading">
+                <p>Data Structures and Algorithm</p>
+                <h1>An algorithm is a step-by-step procedure or a set of instructions for solving a specific problem or accomplishing a particular task. It serves as the blueprint for the code that implements it</h1>
+            </div>
+        </div>
+<!--        page 3-->
+        <div data-scroll data-scroll-speed="-5" class="page3">
+            <div class="container3">
+                <div class="leftbar">
+                    <img src="img/blob.png" alt="back img">
+                </div>
+                <div class="rightbar">
+                    <p>Hailing from murshidabad, my journey into the world of technology began during my college days. Fascinated by both web development and the intricacies of Data Structures and Algorithms, I immersed myself in learning and honing my skills in these domains.</p>
+                </div>
+            </div>
+            <p class="footer">Copyright © 2023 Bapparaj.com</p>
+        </div>
+    </div>
+
+<!--    Scripts Tags-->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/temp.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+</body>
+</html>
